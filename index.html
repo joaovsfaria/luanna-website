@@ -1,351 +1,818 @@
 <!DOCTYPE html>
 
-<html class="light" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Dra. Aesthetic | Biomedicina Estética Avançada</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#cc9e75",
-                        "accent-soft": "#e8d3c1",
-                        "background-light": "#f8f7f6",
-                        "background-dark": "#1e1914",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope", "sans-serif"],
-                        "serif": ["Noto Serif", "serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
+<html class="light" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dra. Luanna Costa | Biomedicina Estética Avançada</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#cc9e75",
+              "accent-soft": "#e8d3c1",
+              "background-light": "#f8f7f6",
+              "background-dark": "#1e1914",
             },
-        }
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+              serif: ["Noto Serif", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
     </script>
-<style>
-        body {
-            font-family: 'Manrope', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .serif-title {
-            font-family: 'Noto Serif', serif;
-        }
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .serif-title {
+        font-family: "Noto Serif", serif;
+      }
     </style>
-</head>
-<body class="bg-background-light dark:bg-background-dark text-[#181411] dark:text-[#f8f7f6] transition-colors duration-300">
-<!-- TopNavBar -->
-<header class="sticky top-0 z-50 w-full border-b border-[#e8e4e1] dark:border-[#3a342e] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="max-w-[1280px] mx-auto px-6 lg:px-20 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="size-8 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-xl font-bold tracking-tight uppercase">Dra. Aesthetic</h2>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Início</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#procedimentos">Procedimentos</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#sobre">Sobre</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#portfolio">Resultados</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#contato">Contato</a>
-</nav>
-<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-primary/20">
-                Agendar Avaliação
-            </button>
-</div>
-</header>
-<main>
-<!-- HeroSection -->
-<section class="relative overflow-hidden pt-10 pb-20 lg:pt-20 lg:pb-32">
-<div class="max-w-[1280px] mx-auto px-6 lg:px-20">
-<div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-<div class="w-full lg:w-1/2 order-2 lg:order-1">
-<div class="max-w-[540px]">
-<span class="inline-block px-4 py-1 rounded-full bg-accent-soft/30 dark:bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">Biomedicina Estética de Alta Performance</span>
-<h1 class="serif-title text-4xl md:text-6xl font-normal leading-[1.1] mb-6 dark:text-white">
-                                A ciência a favor da sua <i class="serif-title italic">beleza natural</i>
-</h1>
-<p class="text-lg text-[#6b5a4b] dark:text-gray-400 mb-10 leading-relaxed font-light">
-                                Procedimentos estéticos avançados com foco biomédico para realçar sua melhor versão com absoluta naturalidade, segurança e precisão clínica.
-                            </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-base hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2">
-<span class="material-symbols-outlined">calendar_month</span>
-                                    Agendar Consulta
-                                </button>
-<button class="border border-[#cc9e75]/30 dark:border-white/10 px-8 py-4 rounded-xl font-bold text-base hover:bg-accent-soft/10 transition-all flex items-center justify-center gap-2">
-                                    Ver Procedimentos
-                                </button>
-</div>
-</div>
-</div>
-<div class="w-full lg:w-1/2 order-1 lg:order-2">
-<div class="relative group">
-<div class="absolute -inset-4 bg-accent-soft/20 rounded-[2rem] rotate-3 group-hover:rotate-1 transition-transform duration-500"></div>
-<div class="relative bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-[1.5rem] shadow-2xl" data-alt="Sophisticated woman in a luxury minimalist clinic setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrfSF7rwg30PKzImdyICyH_bWZBknlQhiDCPZ0fIsBKaKfFAiX7IRQspYVnO9EuDIsgMQcyYAN4-CGSOh_J0412QTl9hXo0isjKc0KEHlc6Wk6tFVa2onEeD0d32AOu19j8RnLXhSrt3l4LYIpZCQDo5UZxEhhMosLJrqa6GVQRNWDw0yYst1wmh0cy05NhRMyZoCi0TKa5kl3Bkl0q9xhNBk59rcWEaetPbhUaPQOwtXrkElAfuUGtVPy9LDSduPVGSojEuV1zwBq");'>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- FeatureSection / Authority -->
-<section class="bg-accent-soft/10 dark:bg-background-dark/50 py-24" id="sobre">
-<div class="max-w-[1280px] mx-auto px-6 lg:px-20">
-<div class="flex flex-col lg:flex-row gap-16 items-start">
-<div class="lg:w-1/3">
-<h2 class="serif-title text-3xl font-bold mb-6">Excelência &amp; Autoridade</h2>
-<p class="text-[#6b5a4b] dark:text-gray-400 leading-relaxed">
-                            Com anos de experiência e formação especializada, oferecemos um olhar clínico e artístico para cada paciente, priorizando o equilíbrio e a harmonia facial.
-                        </p>
-<div class="mt-8 pt-8 border-t border-primary/20">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary text-4xl">verified</span>
-<div>
-<p class="font-bold text-sm">Registro Profissional</p>
-<p class="text-xs opacity-70 italic tracking-wider">CRBM - 000000 / Região X</p>
-</div>
-</div>
-</div>
-</div>
-<div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="group">
-<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl mb-5 grayscale hover:grayscale-0 transition-all duration-500" data-alt="Modern aesthetic clinic laboratory environment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCb6R4gQ-sPOiKb9Vx_5Wxg5--ZbRWK0kQl_4iQLn8mBkdREYN03lb-jnJicgjFGFedKk2QL20UR9fvqOWUFaFA23fwGoFBz__U77CvcIIQ6dN2ORgqp2AaweI3qg2Ej6GsHvx9mu40pK7jYeTAvx0shXYcceiNuFHrdp2hMLff5300GCFdstL4NWzzc3Syf_9aSot0GB4mtMHdb4MmoVfuO4iHSisB2D5u5pyAxWULFXAK0Rbs26qinyaXGyE0Zc5zBuN1YH_29PTk");'></div>
-<h4 class="font-bold text-lg mb-2">Experiência Clínica</h4>
-<p class="text-sm text-[#87715e] dark:text-gray-400">Especialista em biomedicina estética com certificações avançadas em harmonização.</p>
-</div>
-<div class="group">
-<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl mb-5 grayscale hover:grayscale-0 transition-all duration-500" data-alt="Close up of healthy glowing skin" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkLtGy7EF1WxX38xUjF-uuYTSoaKLinsrhihx7t557MQhMlVgdUkoO1IRPmHJG_FkzSJcB-K6zdbnx_A2i8JZZBXopfmOCqv9Z11pP2l2hPRyytv4st27r2gqQUgCvrNJQbw1_cfNG4UNGl8J3sOr_pveHuB6EAjrPAS8n9_t5oKdu1UQjDdVRTtbXWqHXOfxma1sk-bQVD-FaB5Q0pJR1ND2ralCYjVRDYZeIQM2TUli4G-b56R7eVneZAhdxTSjifAdRDOjNY0id");'></div>
-<h4 class="font-bold text-lg mb-2">Foco na Naturalidade</h4>
-<p class="text-sm text-[#87715e] dark:text-gray-400">Resultados que respeitam sua anatomia e promovem rejuvenescimento sutil.</p>
-</div>
-<div class="group">
-<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl mb-5 grayscale hover:grayscale-0 transition-all duration-500" data-alt="High tech aesthetic medicine equipment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhuawajKiOLIkvYD9jnSqYAHmpK85GGbjA7ySipoapkgPbCmkwOFlH0F5FbbqefsxTz_3iPAKxKHbsJVVPUHigNKeaBsxSpoRslKvQdw0bHlU8MhlmNNANciUDP4BL4oZYaJex4d-MGITEyrY5BRKgtmP5mOdtX_WTRbaMnXUcKSon6SbubTTdbkr4P6IzC_0-K0shl-5woIh6So1Kb6Z-pkifkB9c0zr0dsHxyUx3xo4XFGsmU0CrlVz0Tik-1fhkNqSDgBzSHymc");'></div>
-<h4 class="font-bold text-lg mb-2">Tecnologia de Ponta</h4>
-<p class="text-sm text-[#87715e] dark:text-gray-400">Equipamentos e produtos de última geração aprovados pela ANVISA.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- SectionHeader + ImageGrid -->
-<section class="py-24" id="procedimentos">
-<div class="max-w-[1280px] mx-auto px-6 lg:px-20">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-<div>
-<span class="text-primary font-bold text-xs uppercase tracking-widest">Nossas Especialidades</span>
-<h2 class="serif-title text-4xl font-normal mt-2">Procedimentos em Destaque</h2>
-</div>
-<a class="text-primary font-bold text-sm flex items-center gap-2 group" href="#">
-                        Ver catálogo completo
-                        <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Procedure Card 1 -->
-<div class="group cursor-pointer">
-<div class="relative overflow-hidden rounded-2xl mb-4 shadow-lg">
-<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover group-hover:scale-105 transition-transform duration-700" data-alt="Botox treatment area on forehead" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkjiNK8ZrgUw5Yd5YBzp1Qx66402SVqvt8CstDC9Qt14cJ7WUvg5w_GHouVLGVtP6gCmNgxjTJEcr4MCGf2fGX5xv8kZmfB-WXRc9PM_MHeFEMnbLTzNznKCQynAaiD3czeT3Ovzug979FKKObTAneq7PNNN34jbpS4cbuKIM9Ah-_n5xeqrHlemo7NEpQwejBEYIsB1zdv5ilGcMYiW9b7iHeJOysUeEVpPN79Rf-DGqklgJdtqiP9WfdvtrGhMqjZZT0XdK_41Ia");'></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-<span class="text-white text-xs font-bold uppercase tracking-widest">Saiba Mais</span>
-</div>
-</div>
-<h3 class="text-xl font-bold mb-1">Botox</h3>
-<p class="text-[#87715e] dark:text-gray-400 text-sm">Suavização de linhas de expressão e prevenção de rugas dinâmicas.</p>
-</div>
-<!-- Procedure Card 2 -->
-<div class="group cursor-pointer">
-<div class="relative overflow-hidden rounded-2xl mb-4 shadow-lg">
-<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dermal filler application on lips" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDS0davdiiahAqKLRWhejc6g0APzulSJxhrKrYnMN0NB4z3nAyvsrZiZ1oZaNw15pG9aK7BE41XbEuc5HtonT2ztz0_Huzmpj1iNHWcFRsji10H9FWrPAI86c5fcd1KRKveARDE9TODErk8ut6LWQa3w6AjiXt0INxwLekvrD_tm-gy51x8qNXlXBDw0NKLl7jB3tNTgVpGGu2t9PUpcgfaTT2SGZRGM54pW5_o0SxAXXdlKxnC8slItdLi-x_RvcI8YcVedFJPSKSO");'></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-<span class="text-white text-xs font-bold uppercase tracking-widest">Saiba Mais</span>
-</div>
-</div>
-<h3 class="text-xl font-bold mb-1">Preenchimento</h3>
-<p class="text-[#87715e] dark:text-gray-400 text-sm">Harmonização, volume labial e restauração de contornos faciais.</p>
-</div>
-<!-- Procedure Card 3 -->
-<div class="group cursor-pointer">
-<div class="relative overflow-hidden rounded-2xl mb-4 shadow-lg">
-<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover group-hover:scale-105 transition-transform duration-700" data-alt="Skin hydration skinbooster treatment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCg_OOhyQ4MRdWgYj5yqP0LNJpCngqixq9fYIsW2PvxT2a2fWJ911Rk-YrcLdECPLYlANHoWNRuhS_EJi2Jp16t5n2VAPgQ1pPacwcpbFXlcFTRC1Rkz4aZ4MUubBBpm-mFPxvRGHtIrUdPdHoTBOAI6wWIKjJqmrmq_Ba4hu2NlTtg1fqZVSM15EsZut8V0zTO4h2Lg4EGR-DatFumRQBQANhxbtyYEgsuCLbC0cSbrrLh1poK-9vc5pgqLBgO4OQO3PynSbPUFNfh");'></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-<span class="text-white text-xs font-bold uppercase tracking-widest">Saiba Mais</span>
-</div>
-</div>
-<h3 class="text-xl font-bold mb-1">Skinboosters</h3>
-<p class="text-[#87715e] dark:text-gray-400 text-sm">Hidratação profunda da derme para brilho e viço imediato.</p>
-</div>
-<!-- Procedure Card 4 -->
-<div class="group cursor-pointer">
-<div class="relative overflow-hidden rounded-2xl mb-4 shadow-lg">
-<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover group-hover:scale-105 transition-transform duration-700" data-alt="Collagen biostimulator treatment process" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDK0ZEHmmfD_OgpgEVALSRSZ6-dx31xZWIn_OoDmLq1apBiq4WFZqVgTWAvmM4BwbaqfHGEhBF7wpz9utyViM2ocAm4ZdPlVj7-DWSSyjfBcQ-8XQdeqIier7xN9FtkKmxYxtR13K7WoYjST7fHQWXIOGGt5d480rxlWq2bLw4sjM400Sm-IubasITf1HBzrTG8FkQMOvySVZbY1Puqu12ghnhejkC8Ox8mGUw59zb8NgKYaH7UEnimPBFmnroVdwJAN0Agy5PcAJUi");'></div>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-<span class="text-white text-xs font-bold uppercase tracking-widest">Saiba Mais</span>
-</div>
-</div>
-<h3 class="text-xl font-bold mb-1">Bioestimuladores</h3>
-<p class="text-[#87715e] dark:text-gray-400 text-sm">Estímulo natural de colágeno para firmeza e sustentação.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Personalized Section: Philosophy & Trust -->
-<section class="py-20 bg-background-dark text-white overflow-hidden">
-<div class="max-w-[1280px] mx-auto px-6 lg:px-20 relative">
-<div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-1/2"></div>
-<div class="relative z-10 flex flex-col lg:flex-row items-center gap-16">
-<div class="lg:w-1/2">
-<h2 class="serif-title text-4xl lg:text-5xl font-light mb-8 italic">O segredo de um bom procedimento é ninguém notar que ele foi feito.</h2>
-<div class="flex flex-col gap-6">
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-primary">spa</span>
-<div>
-<h4 class="font-bold text-lg">Abordagem Individualizada</h4>
-<p class="text-gray-400 text-sm">Cada rosto é único. Não trabalhamos com moldes prontos, mas com planos de tratamento personalizados.</p>
-</div>
-</div>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-primary">biotech</span>
-<div>
-<h4 class="font-bold text-lg">Rigor Científico</h4>
-<p class="text-gray-400 text-sm">Baseamos cada intervenção em evidências clínicas e nos mais altos padrões de segurança biológica.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="lg:w-1/2 grid grid-cols-2 gap-4">
-<div class="space-y-4">
-<div class="h-64 rounded-2xl bg-center bg-cover" data-alt="Abstract golden pattern texture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBa5JIVw4Ged-NCo166MUpPysArhf8i0f3f1StURpkP-rTWLRCeYURGkvmRAUuOPOtvIX6NKjEAVFIyPnr6goKg1WnkGnOYf395FvToHI5jT5ZO1Q8H2yESJbQNUtoL0OrXm1GY-s8P_laoF0hlz-b22CY2HUKg0_OahLPsaV6YAHU77HRfbZk-lSkJAH0FlPfg0opp051P6qzTXyc0UgzNdY9EW3TKpgla9m3JowIdqen7o8o6rF-_FUpaIzVcMYK3DkFuW4jUqoZT');"></div>
-<div class="p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur">
-<p class="text-3xl font-bold text-primary mb-1">500+</p>
-<p class="text-xs uppercase tracking-widest">Pacientes Satisfeitos</p>
-</div>
-</div>
-<div class="space-y-4 pt-12">
-<div class="p-6 bg-primary rounded-2xl">
-<p class="text-3xl font-bold text-white mb-1">8+</p>
-<p class="text-xs uppercase tracking-widest text-white/80">Anos de Especialização</p>
-</div>
-<div class="h-64 rounded-2xl bg-center bg-cover" data-alt="Detailed view of skincare product texture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnPMsKj41z_n-46npwOFCbIc9aeVGVGg2FdAYgB76xxoE_uPKRiaafx0ErmS_zSAucrPa7ngykChTL6nlQqfDYX5wTA6stkmzyWwfrVBh3hWNaS32ADG1BE9l-F11bIs9b2Qle65P68hNHNmAX_Nt5lum_Z0C5-8JqMv8s3oofIFQaVX_d5hiqBojVGJ2IOMUVjjUY5jXaA_gY97JsMvVPukFjryf6BoTWg4C9afTMF9doX9FVaFog9yG728r07YQ7wILqhaMUq1n_');"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="py-24" id="contato">
-<div class="max-w-[1280px] mx-auto px-6 lg:px-20">
-<div class="bg-accent-soft/30 dark:bg-primary/10 rounded-[2.5rem] p-12 lg:p-20 flex flex-col items-center text-center">
-<span class="material-symbols-outlined text-primary text-6xl mb-6">calendar_today</span>
-<h2 class="serif-title text-4xl md:text-5xl mb-6">Pronta para realçar sua beleza?</h2>
-<p class="max-w-[600px] text-lg text-[#6b5a4b] dark:text-gray-300 mb-10">
-                        Agende uma avaliação inicial e receba um diagnóstico detalhado das necessidades da sua pele e harmonização facial.
-                    </p>
-<div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
-<button class="bg-primary text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all">
-                            Agendar Avaliação via WhatsApp
-                        </button>
-<button class="bg-white dark:bg-background-dark px-10 py-5 rounded-2xl font-bold text-lg border border-primary/20 hover:border-primary transition-all">
-                            Ver Localização
-                        </button>
-</div>
-<div class="mt-12 flex items-center gap-8 opacity-50">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">pin_drop</span>
-<span class="text-sm font-medium">São Paulo, SP</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">schedule</span>
-<span class="text-sm font-medium">Seg - Sex: 09h às 19h</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-background-light dark:bg-background-dark border-t border-[#e8e4e1] dark:border-[#3a342e] pt-16 pb-8">
-<div class="max-w-[1280px] mx-auto px-6 lg:px-20">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-2 mb-6">
-<div class="size-6 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-lg font-bold tracking-tight uppercase">Dra. Aesthetic</h2>
-</div>
-<p class="text-sm text-[#87715e] dark:text-gray-400 leading-relaxed mb-6">
-                        Biomedicina estética avançada focada em resultados naturais e seguros para elevar sua autoestima.
-                    </p>
-<div class="flex gap-4">
-<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-lg">public</span>
-</a>
-<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-lg">photo_camera</span>
-</a>
-</div>
-</div>
-<div>
-<h4 class="font-bold text-sm uppercase tracking-widest mb-6">Navegação</h4>
-<ul class="space-y-4 text-sm text-[#87715e] dark:text-gray-400">
-<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Procedimentos</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Sobre Nós</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Blog &amp; Dicas</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-sm uppercase tracking-widest mb-6">Procedimentos</h4>
-<ul class="space-y-4 text-sm text-[#87715e] dark:text-gray-400">
-<li><a class="hover:text-primary transition-colors" href="#">Toxina Botulínica</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Preenchimento Facial</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Bioestimuladores</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Harmonização</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-sm uppercase tracking-widest mb-6">Contato</h4>
-<ul class="space-y-4 text-sm text-[#87715e] dark:text-gray-400">
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-base">mail</span>
-                            contato@draaesthetic.com
-                        </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-base">call</span>
-                            (11) 99999-9999
-                        </li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary text-base">location_on</span>
-<span data-location="São Paulo, Brazil">Av. Paulista, 1000 - Bela Vista, SP</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-[#e8e4e1] dark:border-[#3a342e] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-xs text-[#87715e] dark:text-gray-500">
-                    © 2024 Dra. Aesthetic Biomedical Specialist. Todos os direitos reservados.
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-[#181411] dark:text-[#f8f7f6] transition-colors duration-300"
+  >
+    <!-- TopNavBar -->
+    <header
+      class="sticky top-0 z-50 w-full border-b border-[#e8e4e1] dark:border-[#3a342e] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md"
+    >
+      <div
+        class="max-w-[1280px] mx-auto pr-6 lg:px-20 h-20 flex items-center justify-between"
+      >
+        <a href="/index.html">
+          <div class="flex items-center">
+            <div class="size-28">
+              <img
+                src="logo.svg"
+                alt="Logo Dra. Aesthetic"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h2 class="text-xl font-bold tracking-tight uppercase">
+              Dra. Luanna Costa
+            </h2>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#"
+            >Início</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="/portfolio.html"
+            >Procedimentos</a
+          >
+          <a
+            class="text-sm font-medium hover:text-primary transition-colors"
+            href="#contato"
+            >Contato</a
+          >
+        </nav>
+        <a
+          href="https://wa.me/553599453085?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+          target="_blank"
+          class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-primary/20 inline-block text-center"
+        >
+          Agendar Avaliação
+        </a>
+      </div>
+    </header>
+    <main>
+      <!-- HeroSection -->
+      <section class="relative overflow-hidden pt-10 pb-20 lg:pt-20 lg:pb-32">
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
+          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="w-full lg:w-1/2 order-2 lg:order-1">
+              <div class="max-w-[540px]">
+                <span
+                  class="inline-block px-4 py-1 rounded-full bg-accent-soft/30 dark:bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6"
+                  >Biomedicina Estética de Alta Performance</span
+                >
+                <h1
+                  class="serif-title text-4xl md:text-6xl font-normal leading-[1.1] mb-6 dark:text-white"
+                >
+                  A ciência a favor da sua
+                  <i class="serif-title italic">beleza natural</i>
+                </h1>
+                <p
+                  class="text-lg text-[#6b5a4b] dark:text-gray-400 mb-10 leading-relaxed font-light"
+                >
+                  Procedimentos estéticos avançados com foco biomédico para
+                  realçar sua melhor versão com absoluta naturalidade, segurança
+                  e precisão clínica.
                 </p>
-<div class="flex gap-6 text-xs text-[#87715e] dark:text-gray-500">
-<a class="hover:text-primary transition-colors" href="#">Política de Privacidade</a>
-<a class="hover:text-primary transition-colors" href="#">Termos de Uso</a>
-</div>
-</div>
-</div>
-</footer>
-</body></html>
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="https://wa.me/553599453085?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+                    target="_blank"
+                    class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-base hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-2"
+                  >
+                    <span class="material-symbols-outlined"
+                      >calendar_month</span
+                    >
+                    Agendar Consulta
+                  </a>
+                  <a
+                    href="portfolio.html"
+                    class="border border-[#cc9e75]/30 dark:border-white/10 px-8 py-4 rounded-xl font-bold text-base hover:bg-accent-soft/10 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  >
+                    Ver Procedimentos
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 order-1 lg:order-2">
+              <div class="relative group">
+                <div
+                  class="absolute -inset-4 bg-accent-soft/20 rounded-[2rem] rotate-3 group-hover:rotate-1 transition-transform duration-500"
+                ></div>
+                <div
+                  class="relative bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-[1.5rem] shadow-2xl"
+                  data-alt="Sophisticated woman in a luxury minimalist clinic setting"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrfSF7rwg30PKzImdyICyH_bWZBknlQhiDCPZ0fIsBKaKfFAiX7IRQspYVnO9EuDIsgMQcyYAN4-CGSOh_J0412QTl9hXo0isjKc0KEHlc6Wk6tFVa2onEeD0d32AOu19j8RnLXhSrt3l4LYIpZCQDo5UZxEhhMosLJrqa6GVQRNWDw0yYst1wmh0cy05NhRMyZoCi0TKa5kl3Bkl0q9xhNBk59rcWEaetPbhUaPQOwtXrkElAfuUGtVPy9LDSduPVGSojEuV1zwBq');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FeatureSection / Authority -->
+      <!-- <section
+        class="bg-accent-soft/10 dark:bg-background-dark/50 py-24"
+        id="sobre"
+      >
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
+          <div class="flex flex-col lg:flex-row gap-16 items-start">
+            <div class="lg:w-1/3">
+              <h2 class="serif-title text-3xl font-bold mb-6">
+                Excelência &amp; Autoridade
+              </h2>
+              <p class="text-[#6b5a4b] dark:text-gray-400 leading-relaxed">
+                Com anos de experiência e formação especializada, oferecemos um
+                olhar clínico e artístico para cada paciente, priorizando o
+                equilíbrio e a harmonia facial.
+              </p>
+              <div class="mt-8 pt-8 border-t border-primary/20">
+                <div class="flex items-center gap-4">
+                  <span class="material-symbols-outlined text-primary text-4xl"
+                    >verified</span
+                  >
+                  <div>
+                    <p class="font-bold text-sm">Registro Profissional</p>
+                    <p class="text-xs opacity-70 italic tracking-wider">
+                      CRBM - 000000 / Região X
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="group">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl mb-5 grayscale hover:grayscale-0 transition-all duration-500"
+                  data-alt="Modern aesthetic clinic laboratory environment"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCb6R4gQ-sPOiKb9Vx_5Wxg5--ZbRWK0kQl_4iQLn8mBkdREYN03lb-jnJicgjFGFedKk2QL20UR9fvqOWUFaFA23fwGoFBz__U77CvcIIQ6dN2ORgqp2AaweI3qg2Ej6GsHvx9mu40pK7jYeTAvx0shXYcceiNuFHrdp2hMLff5300GCFdstL4NWzzc3Syf_9aSot0GB4mtMHdb4MmoVfuO4iHSisB2D5u5pyAxWULFXAK0Rbs26qinyaXGyE0Zc5zBuN1YH_29PTk');
+                  "
+                ></div>
+                <h4 class="font-bold text-lg mb-2">Experiência Clínica</h4>
+                <p class="text-sm text-[#87715e] dark:text-gray-400">
+                  Especialista em biomedicina estética com certificações
+                  avançadas em harmonização.
+                </p>
+              </div>
+              <div class="group">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl mb-5 grayscale hover:grayscale-0 transition-all duration-500"
+                  data-alt="Close up of healthy glowing skin"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkLtGy7EF1WxX38xUjF-uuYTSoaKLinsrhihx7t557MQhMlVgdUkoO1IRPmHJG_FkzSJcB-K6zdbnx_A2i8JZZBXopfmOCqv9Z11pP2l2hPRyytv4st27r2gqQUgCvrNJQbw1_cfNG4UNGl8J3sOr_pveHuB6EAjrPAS8n9_t5oKdu1UQjDdVRTtbXWqHXOfxma1sk-bQVD-FaB5Q0pJR1ND2ralCYjVRDYZeIQM2TUli4G-b56R7eVneZAhdxTSjifAdRDOjNY0id');
+                  "
+                ></div>
+                <h4 class="font-bold text-lg mb-2">Foco na Naturalidade</h4>
+                <p class="text-sm text-[#87715e] dark:text-gray-400">
+                  Resultados que respeitam sua anatomia e promovem
+                  rejuvenescimento sutil.
+                </p>
+              </div>
+              <div class="group">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl mb-5 grayscale hover:grayscale-0 transition-all duration-500"
+                  data-alt="High tech aesthetic medicine equipment"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhuawajKiOLIkvYD9jnSqYAHmpK85GGbjA7ySipoapkgPbCmkwOFlH0F5FbbqefsxTz_3iPAKxKHbsJVVPUHigNKeaBsxSpoRslKvQdw0bHlU8MhlmNNANciUDP4BL4oZYaJex4d-MGITEyrY5BRKgtmP5mOdtX_WTRbaMnXUcKSon6SbubTTdbkr4P6IzC_0-K0shl-5woIh6So1Kb6Z-pkifkB9c0zr0dsHxyUx3xo4XFGsmU0CrlVz0Tik-1fhkNqSDgBzSHymc');
+                  "
+                ></div>
+                <h4 class="font-bold text-lg mb-2">Tecnologia de Ponta</h4>
+                <p class="text-sm text-[#87715e] dark:text-gray-400">
+                  Equipamentos e produtos de última geração aprovados pela
+                  ANVISA.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- SectionHeader + ImageGrid -->
+      <section class="py-24" id="procedimentos">
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6"
+          >
+            <div>
+              <span
+                class="text-primary font-bold text-xs uppercase tracking-widest"
+                >Nossas Especialidades</span
+              >
+              <h2 class="serif-title text-4xl font-normal mt-2">
+                Procedimentos em Destaque
+              </h2>
+            </div>
+            <a
+              class="text-primary font-bold text-sm flex items-center gap-2 group"
+              href="/portfolio.html"
+            >
+              Ver catálogo completo
+              <span
+                class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Procedure Card 1 -->
+            <div class="group cursor-pointer">
+              <div class="relative overflow-hidden rounded-2xl mb-4 shadow-lg">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="Botox treatment area on forehead"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkjiNK8ZrgUw5Yd5YBzp1Qx66402SVqvt8CstDC9Qt14cJ7WUvg5w_GHouVLGVtP6gCmNgxjTJEcr4MCGf2fGX5xv8kZmfB-WXRc9PM_MHeFEMnbLTzNznKCQynAaiD3czeT3Ovzug979FKKObTAneq7PNNN34jbpS4cbuKIM9Ah-_n5xeqrHlemo7NEpQwejBEYIsB1zdv5ilGcMYiW9b7iHeJOysUeEVpPN79Rf-DGqklgJdtqiP9WfdvtrGhMqjZZT0XdK_41Ia');
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6"
+                >
+                  <span
+                    class="text-white text-xs font-bold uppercase tracking-widest"
+                    >Saiba Mais</span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-1">Botox</h3>
+              <p class="text-[#87715e] dark:text-gray-400 text-sm">
+                Suavização de linhas de expressão e prevenção de rugas
+                dinâmicas.
+              </p>
+            </div>
+            <!-- Procedure Card 2 -->
+            <div class="group cursor-pointer">
+              <div class="relative overflow-hidden rounded-2xl mb-4 shadow-lg">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="Dermal filler application on lips"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDS0davdiiahAqKLRWhejc6g0APzulSJxhrKrYnMN0NB4z3nAyvsrZiZ1oZaNw15pG9aK7BE41XbEuc5HtonT2ztz0_Huzmpj1iNHWcFRsji10H9FWrPAI86c5fcd1KRKveARDE9TODErk8ut6LWQa3w6AjiXt0INxwLekvrD_tm-gy51x8qNXlXBDw0NKLl7jB3tNTgVpGGu2t9PUpcgfaTT2SGZRGM54pW5_o0SxAXXdlKxnC8slItdLi-x_RvcI8YcVedFJPSKSO');
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6"
+                >
+                  <span
+                    class="text-white text-xs font-bold uppercase tracking-widest"
+                    >Saiba Mais</span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-1">Preenchimento</h3>
+              <p class="text-[#87715e] dark:text-gray-400 text-sm">
+                Harmonização, volume labial e restauração de contornos faciais.
+              </p>
+            </div>
+            <!-- Procedure Card 3 -->
+            <div class="group cursor-pointer">
+              <div class="relative overflow-hidden rounded-2xl mb-4 shadow-lg">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="Skin hydration skinbooster treatment"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCg_OOhyQ4MRdWgYj5yqP0LNJpCngqixq9fYIsW2PvxT2a2fWJ911Rk-YrcLdECPLYlANHoWNRuhS_EJi2Jp16t5n2VAPgQ1pPacwcpbFXlcFTRC1Rkz4aZ4MUubBBpm-mFPxvRGHtIrUdPdHoTBOAI6wWIKjJqmrmq_Ba4hu2NlTtg1fqZVSM15EsZut8V0zTO4h2Lg4EGR-DatFumRQBQANhxbtyYEgsuCLbC0cSbrrLh1poK-9vc5pgqLBgO4OQO3PynSbPUFNfh');
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6"
+                >
+                  <span
+                    class="text-white text-xs font-bold uppercase tracking-widest"
+                    >Saiba Mais</span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-1">Skinboosters</h3>
+              <p class="text-[#87715e] dark:text-gray-400 text-sm">
+                Hidratação profunda da derme para brilho e viço imediato.
+              </p>
+            </div>
+            <!-- Procedure Card 4 -->
+            <div class="group cursor-pointer">
+              <div class="relative overflow-hidden rounded-2xl mb-4 shadow-lg">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="Collagen biostimulator treatment process"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDK0ZEHmmfD_OgpgEVALSRSZ6-dx31xZWIn_OoDmLq1apBiq4WFZqVgTWAvmM4BwbaqfHGEhBF7wpz9utyViM2ocAm4ZdPlVj7-DWSSyjfBcQ-8XQdeqIier7xN9FtkKmxYxtR13K7WoYjST7fHQWXIOGGt5d480rxlWq2bLw4sjM400Sm-IubasITf1HBzrTG8FkQMOvySVZbY1Puqu12ghnhejkC8Ox8mGUw59zb8NgKYaH7UEnimPBFmnroVdwJAN0Agy5PcAJUi');
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6"
+                >
+                  <span
+                    class="text-white text-xs font-bold uppercase tracking-widest"
+                    >Saiba Mais</span
+                  >
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-1">Bioestimuladores</h3>
+              <p class="text-[#87715e] dark:text-gray-400 text-sm">
+                Estímulo natural de colágeno para firmeza e sustentação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Personalized Section: Philosophy & Trust -->
+      <section class="py-20 bg-background-dark text-white overflow-hidden">
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-20 relative">
+          <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 translate-x-1/2"
+          ></div>
+          <div
+            class="relative z-10 flex flex-col lg:flex-row items-center gap-16"
+          >
+            <div class="lg:w-1/2">
+              <h2
+                class="serif-title text-4xl lg:text-5xl font-light mb-8 italic"
+              >
+                O segredo de um bom procedimento é ninguém notar que ele foi
+                feito.
+              </h2>
+              <div class="flex flex-col gap-6">
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-primary"
+                    >spa</span
+                  >
+                  <div>
+                    <h4 class="font-bold text-lg">Abordagem Individualizada</h4>
+                    <p class="text-gray-400 text-sm">
+                      Cada rosto é único. Não trabalhamos com moldes prontos,
+                      mas com planos de tratamento personalizados.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <span class="material-symbols-outlined text-primary"
+                    >biotech</span
+                  >
+                  <div>
+                    <h4 class="font-bold text-lg">Rigor Científico</h4>
+                    <p class="text-gray-400 text-sm">
+                      Baseamos cada intervenção em evidências clínicas e nos
+                      mais altos padrões de segurança biológica.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+              <div class="space-y-4">
+                <div
+                  class="h-64 rounded-2xl bg-center bg-cover"
+                  data-alt="Abstract golden pattern texture"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBa5JIVw4Ged-NCo166MUpPysArhf8i0f3f1StURpkP-rTWLRCeYURGkvmRAUuOPOtvIX6NKjEAVFIyPnr6goKg1WnkGnOYf395FvToHI5jT5ZO1Q8H2yESJbQNUtoL0OrXm1GY-s8P_laoF0hlz-b22CY2HUKg0_OahLPsaV6YAHU77HRfbZk-lSkJAH0FlPfg0opp051P6qzTXyc0UgzNdY9EW3TKpgla9m3JowIdqen7o8o6rF-_FUpaIzVcMYK3DkFuW4jUqoZT');
+                  "
+                ></div>
+                <div
+                  class="p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur"
+                >
+                  <p class="text-3xl font-bold text-primary mb-1">500+</p>
+                  <p class="text-xs uppercase tracking-widest">
+                    Pacientes Satisfeitos
+                  </p>
+                </div>
+              </div>
+              <div class="space-y-4 pt-12">
+                <div class="p-6 bg-primary rounded-2xl">
+                  <p class="text-3xl font-bold text-white mb-1">8+</p>
+                  <p class="text-xs uppercase tracking-widest text-white/80">
+                    Anos de Especialização
+                  </p>
+                </div>
+                <div
+                  class="h-64 rounded-2xl bg-center bg-cover"
+                  data-alt="Detailed view of skincare product texture"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnPMsKj41z_n-46npwOFCbIc9aeVGVGg2FdAYgB76xxoE_uPKRiaafx0ErmS_zSAucrPa7ngykChTL6nlQqfDYX5wTA6stkmzyWwfrVBh3hWNaS32ADG1BE9l-F11bIs9b2Qle65P68hNHNmAX_Nt5lum_Z0C5-8JqMv8s3oofIFQaVX_d5hiqBojVGJ2IOMUVjjUY5jXaA_gY97JsMvVPukFjryf6BoTWg4C9afTMF9doX9FVaFog9yG728r07YQ7wILqhaMUq1n_');
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section class="py-24 px-6 md:px-40">
+        <div class="max-w-[1200px] mx-auto">
+          <div class="text-center mb-16">
+            <span
+              class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-4 block"
+              >Experiências Reais</span
+            >
+            <h2 class="font-serif text-4xl md:text-5xl dark:text-white mb-6">
+              O que dizem nossas clientes
+            </h2>
+            <div class="w-16 h-0.5 bg-primary/30 mx-auto"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div
+              class="bg-white dark:bg-[#2a241e] p-8 rounded-xl testimonial-shadow border border-[#e8d3c1]/30 flex flex-col gap-6"
+            >
+              <div class="flex gap-0.5 text-accent-gold">
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+              </div>
+              <p
+                class="font-serif italic text-lg leading-relaxed text-[#4a423a] dark:text-[#d2c9c0]"
+              >
+                "O atendimento é impecável e os resultados são
+                surpreendentemente naturais. Senti total segurança com a Dra.
+                durante toda a harmonização."
+              </p>
+              <div class="flex items-center gap-4 mt-auto">
+                <div
+                  class="size-12 rounded-full bg-cover bg-center border-2 border-primary/20"
+                  data-alt="Portrait of a smiling woman"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1ceGnwE-EvjIZDQGKM4GEqHd-cozY9S9Fh0epAnPZe48PDR1J-RGoRMH5FSEN5Rxkj8cxkr3kmzH4cOf0ci6baRubldrb6T1KnMmRfMqfRaoO3b5jwoesd_oZIj6VS0LZZ5GWTFfXt8y4bOvjCGarKlzOpEj1mUSRbd1bLEsZ69YqosZl4wXF3SeF7vzcBs2G9BsNryTJP_DRhqolCKtIQjcet7Flx6Olc-Ay_2xLxhUE6I8pXREBTp1wPw9HWI79GX3aAZ-w6c56');
+                  "
+                ></div>
+                <div>
+                  <h4 class="font-bold text-sm">Helena Souza</h4>
+                  <p class="text-xs text-[#87715e] dark:text-[#a6917e]">
+                    Paciente há 2 anos
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="bg-white dark:bg-[#3a322b] p-8 rounded-xl testimonial-shadow flex flex-col gap-6"
+            >
+              <div class="flex gap-0.5 text-accent-gold">
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+              </div>
+              <p
+                class="font-serif italic text-lg leading-relaxed text-[#4a423a] dark:text-[#e2dbd5]"
+              >
+                "Ambiente de puro luxo e cuidado. A técnica é refinada e o
+                pós-procedimento muito atencioso. Recomendo para quem busca o
+                melhor."
+              </p>
+              <div class="flex items-center gap-4 mt-auto">
+                <div
+                  class="size-12 rounded-full bg-cover bg-center border-2 border-white/40"
+                  data-alt="Close up of a woman's face"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvUZZ43o9Lb89nEukk6uBfdByxJc3NiCyqoZsBnlQ-7HDOcxuOnD5vJwmHkB2NzlV-uojv9dKeRIwQB6GDwRm0dAJJkFsgIdqgGm0pfI5mXFmfh_wnUaVC0x614yqvCpPdkqS9hubJ4LLmdAazkHnVD9fMh5jNj3XsRPjj5UF7Va33G0x8QKeyVT3NONEMeKHGIRqMvGjdkXVKNTAPGX0oN4s1uiAfgmTy0bTo3WWRmAbPa-NtnhDW6UZ8b9Uh3OLWtJVirRFRb5bL');
+                  "
+                ></div>
+                <div>
+                  <h4 class="font-bold text-sm">Mariana Dias</h4>
+                  <p class="text-xs text-[#87715e] dark:text-[#b09e8d]">
+                    Preenchimento Facial
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="bg-white dark:bg-[#2a241e] p-8 rounded-xl testimonial-shadow border border-[#e8d3c1]/30 flex flex-col gap-6"
+            >
+              <div class="flex gap-0.5 text-accent-gold">
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined !text-[20px]"
+                  style="font-variation-settings: 'FILL' 1"
+                  >star</span
+                >
+              </div>
+              <p
+                class="font-serif italic text-lg leading-relaxed text-[#4a423a] dark:text-[#d2c9c0]"
+              >
+                "Busquei procedimentos avançados e encontrei uma técnica
+                incrível. Me senti segura e o resultado superou todas as
+                expectativas."
+              </p>
+              <div class="flex items-center gap-4 mt-auto">
+                <div
+                  class="size-12 rounded-full bg-cover bg-center border-2 border-primary/20"
+                  data-alt="Portrait of a professional person"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRcneNbcftOykxWM0ExZXTH5MQtgo8hAs9fvCsczUFBrS72ZYpsCNO2O_ZhP9aAAQHbewZZ1oMPqAy1Vo3vtIpS1ObCTBESFjNuSpphWULPWow91czeaf-YkiRDOQw1vLIlcbMOTetvv2RBoyn4e93qRcyPs7uXLIy4U7R9-315gXN8gdKqVlM8ZOodfMyFHtD6Tcddnd9PcSjqoYJHzTzaoAlkVzOw4JVnaeTOZC3C1JcDJIliyNrKFjP9Df-3xVnEzC7C79zP7D2');
+                  "
+                ></div>
+                <div>
+                  <h4 class="font-bold text-sm">Beatriz Alencar</h4>
+                  <p class="text-xs text-[#87715e] dark:text-[#a6917e]">
+                    Bioestimuladores
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="py-24" id="contato">
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
+          <div
+            class="bg-accent-soft/30 dark:bg-primary/10 rounded-[2.5rem] p-12 lg:p-20 flex flex-col items-center text-center"
+          >
+            <span class="material-symbols-outlined text-primary text-6xl mb-6"
+              >calendar_today</span
+            >
+            <h2 class="serif-title text-4xl md:text-5xl mb-6">
+              Pronta para realçar sua beleza?
+            </h2>
+            <p
+              class="max-w-[600px] text-lg text-[#6b5a4b] dark:text-gray-300 mb-10"
+            >
+              Agende uma avaliação inicial e receba um diagnóstico detalhado das
+              necessidades da sua pele e harmonização facial.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+              <button
+                class="bg-primary text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all"
+              >
+                Agendar Avaliação
+              </button>
+              <a
+                href="contact.html"
+                class="bg-white dark:bg-background-dark px-10 py-5 rounded-2xl font-bold text-lg border border-primary/20 hover:border-primary transition-all text-center cursor-pointer"
+              >
+                Ver Localização
+              </a>
+            </div>
+            <div class="mt-12 flex items-center gap-8 opacity-50">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm">pin_drop</span>
+                <span class="text-sm font-medium">Pouso Alegre, MG</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm">schedule</span>
+                <span class="text-sm font-medium">Seg - Sex: 09h às 19h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-background-light dark:bg-background-dark border-t border-[#e2dbd5] dark:border-[#3a322b] py-20 px-6 md:px-40"
+    >
+      <div class="max-w-[1200px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+          <div class="col-span-1 md:col-span-1">
+            <div
+              class="flex items-center gap-3 text-[#181411] dark:text-[#fbfaf9] mb-6"
+            >
+              <div class="size-6 text-primary">
+                <svg
+                  fill="none"
+                  viewbox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-xl font-bold font-serif italic">
+                Clínica Estética
+              </h2>
+            </div>
+            <p
+              class="text-sm text-[#87715e] dark:text-[#a6917e] leading-relaxed mb-6"
+            >
+              Excelência em biomedicina estética e procedimentos avançados para
+              realçar sua beleza natural com segurança e sofisticação.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="size-10 rounded-full border border-[#e2dbd5] dark:border-[#3a322b] flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                href="https://www.instagram.com/draluannacosta?igsh=MTl4bW5xOXExcjJuYw=="
+              >
+                <svg class="size-5" fill="currentColor" viewbox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-widest mb-8">
+              Navegação
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  class="text-sm text-[#87715e] dark:text-[#a6917e] hover:text-primary transition-colors"
+                  href="#"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-[#87715e] dark:text-[#a6917e] hover:text-primary transition-colors"
+                  href="#"
+                  >Procedimentos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-[#87715e] dark:text-[#a6917e] hover:text-primary transition-colors"
+                  href="#"
+                  >Sobre</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-[#87715e] dark:text-[#a6917e] hover:text-primary transition-colors"
+                  href="#"
+                  >Resultados</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-widest mb-8">
+              Especialidades
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  class="text-sm text-[#87715e] dark:text-[#a6917e] hover:text-primary transition-colors"
+                  href="#"
+                  >Harmonização Facial</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-[#87715e] dark:text-[#a6917e] hover:text-primary transition-colors"
+                  href="#"
+                  >Lifting com Fios</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-[#87715e] dark:text-[#a6917e] hover:text-primary transition-colors"
+                  href="#"
+                  >Skinbooster</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-[#87715e] dark:text-[#a6917e] hover:text-primary transition-colors"
+                  href="#"
+                  >Peeling de Cristal</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm uppercase tracking-widest mb-8">
+              Institucional
+            </h4>
+            <div class="space-y-4 text-sm text-[#87715e] dark:text-[#a6917e]">
+              <p>Dra. Juliana Mendes</p>
+              <p>Biomédica Esteta</p>
+              <p>CRBM-SP 12345</p>
+              <div class="pt-4">
+                <a
+                  class="text-xs border-b border-primary/30 pb-0.5 hover:border-primary transition-all"
+                  href="#"
+                  >Política de Privacidade</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-10 border-t border-[#e2dbd5] dark:border-[#3a322b] flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <p class="text-xs text-[#87715e] dark:text-[#87715e]">
+            © 2025 Clínica Luanna Costa Gomes. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
