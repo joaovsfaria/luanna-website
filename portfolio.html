@@ -48,22 +48,38 @@
       .serif-title {
         font-family: "Noto Serif", serif;
       }
+
       .grid-asymmetric {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 1.5rem;
       }
-      .portfolio-item:nth-child(1) {
-        grid-column: span 8;
+
+      /* Regras para Desktop (Telás maiores que 768px) */
+      @media (min-width: 768px) {
+        /* Item 1, 5, 9... (Largo) */
+        .portfolio-item:nth-child(4n + 1) {
+          grid-column: span 8;
+        }
+        /* Item 2, 6, 10... (Quadrado) */
+        .portfolio-item:nth-child(4n + 2) {
+          grid-column: span 4;
+        }
+        /* Item 3, 7, 11... (Quadrado) */
+        .portfolio-item:nth-child(4n + 3) {
+          grid-column: span 4;
+        }
+        /* Item 4, 8, 12... (Largo) */
+        .portfolio-item:nth-child(4n + 4) {
+          grid-column: span 8;
+        }
       }
-      .portfolio-item:nth-child(2) {
-        grid-column: span 4;
-      }
-      .portfolio-item:nth-child(3) {
-        grid-column: span 4;
-      }
-      .portfolio-item:nth-child(4) {
-        grid-column: span 8;
+
+      /* Regra para Mobile (Ocupa a largura toda) */
+      @media (max-width: 767px) {
+        .portfolio-item {
+          grid-column: span 12 !important;
+        }
       }
     </style>
   </head>
@@ -82,7 +98,7 @@
             <div class="size-28">
               <img
                 src="logo.svg"
-                alt="Logo Dra. Aesthetic"
+                alt="Logo Dra. Luanna Costa"
                 class="w-full h-full object-contain"
               />
             </div>
@@ -99,7 +115,7 @@
           >
           <a
             class="text-sm font-medium hover:text-primary transition-colors"
-            href="#"
+            href="/portfolio.html"
             >Procedimentos</a
           >
           <a
@@ -147,7 +163,9 @@
             <div
               class="size-12 bg-white/50 dark:bg-white/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
             >
-              <span class="material-symbols-outlined text-primary">face</span>
+              <span class="material-symbols-outlined text-primary"
+                >syringe</span
+              >
             </div>
             <h3 class="serif-title text-xl font-bold mb-3">Botox</h3>
             <p
@@ -173,9 +191,7 @@
             <div
               class="size-12 bg-white/50 dark:bg-white/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
             >
-              <span class="material-symbols-outlined text-primary"
-                >auto_fix_high</span
-              >
+              <span class="material-symbols-outlined text-primary">lips</span>
             </div>
             <h3 class="serif-title text-xl font-bold mb-3">Preenchimento</h3>
             <p
@@ -261,7 +277,6 @@
               class="text-[#181411]/60 dark:text-[#f1f0ef]/60 max-w-xl mx-auto italic"
             >
               *Os resultados variam de acordo com o metabolismo individual.
-              Fotos autorizadas para fins educativos.
             </p>
           </div>
           <div class="grid-asymmetric">
@@ -270,11 +285,9 @@
               class="portfolio-item group relative overflow-hidden rounded-xl bg-[#dcdad8] dark:bg-[#25201d] aspect-[16/9]"
             >
               <div
-                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                class="absolute inset-0 bg-cover bg-no-repeat bg-center transition-transform duration-700 group-hover:scale-105"
                 data-alt="Before and after dermal filler results showing cheekbone enhancement"
-                style="
-                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYx4rPF2w-OlHredrSRPWEc1cZk3eFVfMb_OPm28W1jJEJJ9pSyPUBwIU2wtplquX-WmlAlkNOESQXJNHgSgok3CoUMoM0W_Bmc5IqXm043Xy9IJ6fW_NJcK13ldUUHrhY-VRjUMcMKyLzx3VFsK6BB1CZynQCSgoXoNOrPPovCljSxujgFdH284VHzLi0ybVM1J9vkJE2y-AJmoEQew1zM8Z7EQgueHLZds400nOawHV65ra9dzIPucoK-nouuXmJfDX4l-eAXnzU');
-                "
+                style="background-image: url('/assets/antes-depois-botox.jpg')"
               ></div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8"
@@ -295,9 +308,7 @@
               <div
                 class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 data-alt="Close up of lips after lip filler procedure"
-                style="
-                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDVyT0ljbgK_sYzhf1TnHuwyZxhZfkUGsKauM8iRrbwbu44zQkgVxIWIJw-al_pcruk9lyFuxNRBZFvwm05b1-1S17s-rsfHY2MPtJK-UdTpEWw9Xgyu5gSAapfIsgtv8jpnUG6Wm8Q0EwTK_Td1uE7Fr3_BWiVIkxwbnWQqGkPt9_ovXQnX47xOfdM6ZxRIZijxUPqI6r8jsBMIW9mOjWkewWIkj0ZU4Mn_xBT_6OaCktW6srOudd7-7Rc3K_Bspw9FlBVIG34JP05');
-                "
+                style="background-image: url('/assets/boca-mel.JPG')"
               ></div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
@@ -318,9 +329,7 @@
               <div
                 class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 data-alt="Close up of forehead area showing botox results"
-                style="
-                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBks3RCc46KCAQWBYzKxv_LuWu5uxlKS_QtjNzj9jpvukOliWbl7ZzuWq_ZLbzN1qxWHbdywmRWjKthDkZV0C8seT4wdYL3H39_jMsFy4iL_xCtdFRCl8wiFDZ0oUl00kHtx4FGGdGx0nl3DSaiiBYlVLVrq_ZdGWcAhC6qzk-ETtyCUQMMuok_l6xbRBE6u_3D2ekjb03pnQpOgKF2xM-ibJpgkV2MhWGdaJTxuN2yKeUsaw7WlMkcMSdVsUyDusy_JUgNhuCFezqO');
-                "
+                style="background-image: url('/assets/aplicando-boca-mel.JPG')"
               ></div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
@@ -339,9 +348,7 @@
               <div
                 class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 data-alt="Woman with glowing skin after biostimulator treatment"
-                style="
-                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDk-i6ZOrUk8Nh6cDdH8qNX4wMrtyCRzbrjTUhowin6UUY26WGjPLFq37IHqMpr3se4lWOnKxYfIkeJvDV3-MwSu1bVVnudTSeolDnuYM0WpYVcsfKIe7iRXRWysIfVkfUs4PghirCJZ8kY3b719GYZ1ZNsMVtXiGvhJ2-ks6q2N1odkD3eOzYn9VTjnqjLQtxN1X3G-xWDA7cI5vpvRhxNKntwwHR4QX2MeoRequhXQBMFxSbdp4jn3EdMoscJN5uswkWPbW2pbwln');
-                "
+                style="background-image: url('/assets/agora-sim-vitoria.PNG')"
               ></div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8"
@@ -355,13 +362,90 @@
                 </h4>
               </div>
             </div>
-          </div>
-          <div class="mt-16 flex justify-center">
-            <button
-              class="border border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full text-sm font-bold transition-all uppercase tracking-widest"
+            <!-- Portfolio Item 5 -->
+            <div
+              class="portfolio-item group relative overflow-hidden rounded-xl bg-[#dcdad8] dark:bg-[#25201d] aspect-[16/9]"
             >
-              Ver Portfólio Completo
-            </button>
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Harmonização facial completa"
+                style="background-image: url('assets/carlos.PNG')"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8"
+              >
+                <span
+                  class="text-accent-gold text-xs font-bold uppercase tracking-widest mb-2"
+                  >Harmonização Facial</span
+                >
+                <h4 class="text-white text-2xl serif-title">
+                  Simetria e Proporção
+                </h4>
+              </div>
+            </div>
+            <!-- Portfolio Item 6 -->
+            <div
+              class="portfolio-item group relative overflow-hidden rounded-xl bg-[#dcdad8] dark:bg-[#25201d] aspect-square"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Resultado de Rinomodelação"
+                style="
+                  background-image: url('assets/aplicando-preenchedor-boca.JPG');
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+              >
+                <span
+                  class="text-accent-gold text-xs font-bold uppercase tracking-widest mb-1"
+                  >Rinomodelação</span
+                >
+                <h4 class="text-white text-lg serif-title">Perfil Definido</h4>
+              </div>
+            </div>
+            <!-- Portfolio Item 7 -->
+            <div
+              class="portfolio-item group relative overflow-hidden rounded-xl bg-[#dcdad8] dark:bg-[#25201d] aspect-square"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Tratamento com Fios de PDO"
+                style="background-image: url('assets/fios-pdo.jpg')"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+              >
+                <span
+                  class="text-accent-gold text-xs font-bold uppercase tracking-widest mb-1"
+                  >Fios de PDO</span
+                >
+                <h4 class="text-white text-lg serif-title">
+                  Lifting Sem Cirurgia
+                </h4>
+              </div>
+            </div>
+            <!-- Portfolio Item 8 -->
+            <div
+              class="portfolio-item group relative overflow-hidden rounded-xl bg-[#dcdad8] dark:bg-[#25201d] aspect-[16/9]"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                data-alt="Pele tratada com microagulhamento"
+                style="background-image: url('assets/microagulhamento.jpg')"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8"
+              >
+                <span
+                  class="text-accent-gold text-xs font-bold uppercase tracking-widest mb-2"
+                  >Microagulhamento</span
+                >
+                <h4 class="text-white text-2xl serif-title">
+                  Renovação Celular
+                </h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -406,13 +490,6 @@
             >
               Agende sua avaliação agora
             </button>
-            <a
-              class="flex items-center gap-3 font-medium hover:underline"
-              href="tel:+550000000000"
-            >
-              <span class="material-symbols-outlined">call</span>
-              Ou ligue para nós
-            </a>
           </div>
           <div
             class="mt-12 flex items-center justify-center gap-8 opacity-70 grayscale brightness-200"
